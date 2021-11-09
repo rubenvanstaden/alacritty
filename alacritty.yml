@@ -68,7 +68,6 @@ background_opacity: 1.0
 key_bindings:
   - { key: V,         mods: Control|Shift, action: Paste                       }
   - { key: C,         mods: Control|Shift, action: Copy                        }
-  - { key: F11,       mods: None,          action: ToggleFullscreen            }
   - { key: L,         mods: Control,       action: ClearLogNotice              }
   - { key: L,         mods: Control,       chars: "\x0c"                       }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
