@@ -2,4 +2,4 @@
 
 set -ex
 
-cp alacritty.yml ~/.config/alacritty/alacritty.yml
+cp -f alacritty.yml ~/.config/alacritty/alacritty.yml
