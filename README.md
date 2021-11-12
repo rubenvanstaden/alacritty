@@ -1,10 +1,15 @@
 # Alacritty
 
-Configuration for alacritty terminal
+* Install [alacritty](https://github.com/alacritty/alacritty)
 
 ```shell
-# Installation
-* [alacritty](https://github.com/alacritty/alacritty)
+sudo snap install alacritty --classic
+```
 
-cp alacritty.yml ~/.config/alacritty/alacritty.yml
+```shell
+# Clean config
+./clean.sh
+
+# Install config
+./install.sh
 ```
