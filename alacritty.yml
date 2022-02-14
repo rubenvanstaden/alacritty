@@ -3,6 +3,8 @@
 env:
   TERM: xterm-256color
 
+tabspaces: 2
+
 window:
   padding:
     x: 10
@@ -56,11 +58,13 @@ colors:
 
   # Bright colors
   bright:
-    black:   '#21252b'
+    # black:   '#21252b'
+    black:   '#8A8A8A'
     red:     '#e86671'
     green:   '#98c379'
     yellow:  '#e0af68'
-    blue:    '#61afef'
+    # blue:    '#61afef'
+    blue:   '#abb2bf'
     magenta: '#c678dd'
     cyan:    '#56b6c2'
     white:   '#abb2bf'
