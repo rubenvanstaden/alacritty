@@ -1,5 +1,3 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
-
 env:
   TERM: xterm-256color
 
@@ -10,56 +8,23 @@ scrolling:
 
 font:
   normal:
-    family: FiraCode Nerd Font
+    family: MonoLisa
     style: Regular
   bold:
-    family: FiraCode Nerd Font
+    family: MonoLisa
     style: Bold
   italic:
-    family: FiraCode Nerd Font
+    family: MonoLisa
     style: Italic
   bold_italic:
-    family: FiraCode Nerd Font
+    family: MonoLisa
     style: Bold Italic
   offset:
     x: 0
     y: 1
-  size: 10.0
+  size: 9
 
 draw_bold_text_with_bright_colors: true
-
-# schemes:
-#   aquarium_dark: &dark
-#     primary:
-#       background:        &aquarium_bg '#20202A'
-#       foreground:        '#63718B'
-#       bright_foreground: '#a0a8b6'
-#       dim_foreground:    '#4c5664'
-#     cursor:
-#       cursor: '#b8dceb'
-#       text: '#20202a'
-#     vi_mode_cursor:
-#       cursor: '#E8CCA7'
-#     bright:
-#       black:   '#3b3b4d'
-#       red:     '#cc9b9d'
-#       green:   '#a3ccad'
-#       yellow:  '#d1ba97'
-#       blue:    '#B8C9EA'
-#       magenta: '#c497b3'
-#       cyan:    '#95C2D1'
-#       white:   '#63718B'
-#     normal:
-#       black:   '#44495E'
-#       red:     '#ebb9b9'
-#       green:   '#caf6bb'
-#       yellow:  '#ebe3b9'
-#       blue:    '#cddbf9'
-#       magenta: '#f6bbe7'
-#       cyan:    '#b8dceb'
-#       white:   '#C6D0E9'
-# colors:
-#   *dark
 
 colors:
   primary:
@@ -70,25 +35,23 @@ colors:
     background: '#393f4a'
   normal:
     black:   '#8A8A8A'
-    # black:   '#20232A'
-    red:     '#e86671'
-    green:   '#98c379'
-    yellow:  '#e0af68'
+    green:   '#7d7c7b'
     blue:    '#61afef'
-    magenta: '#c678dd'
     cyan:    '#56b6c2'
     white:   '#7d7c7b'
+    # yellow:  '#e0af68'
+    # magenta: '#c678dd'
+    # red:     '#e86671'
   bright:
-    # black:   '#21252b'
-    black:   '#8A8A8A'
-    red:     '#e86671'
-    green:   '#98c379'
-    yellow:  '#e0af68'
-    # blue:    '#61afef'
+    green:   '#7d7c7b'
     blue:   '#abb2bf'
-    magenta: '#c678dd'
     cyan:    '#56b6c2'
     white:   '#abb2bf'
+    # black:   '#8A8A8A'
+    # red:     '#e86671'
+    # green:   '#98c379'
+    # yellow:  '#e0af68'
+    # magenta: '#c678dd'
   indexed_colors:
     - { index: 16, color: '#d19a66' }
     - { index: 17, color: '#f65866' }
