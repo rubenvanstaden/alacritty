@@ -6,7 +6,7 @@ window:
         y: 15
     dimensions:
         columns: 120
-        lines: 48
+        lines: 45
 
 font:
   normal:
@@ -24,16 +24,10 @@ font:
   size: 16
 
 colors:
-    # Default colors
     primary:
         background: '#2E3440'
         foreground: '#abb2bf'
 
-    vi_mode_cursor:
-        text: "#303446" # base
-        cursor: "#BABBF1" # lavender
-
-    # Normal colors
     normal:
         black:   '#3B4252'
         red:     '#BF616A'
@@ -44,7 +38,6 @@ colors:
         cyan:    '#88C0D0'
         white:   '#abb2bf'
 
-    # Bright colors
     bright:
         black:   '#4C566A'
         red:     '#BF616A'
@@ -58,13 +51,15 @@ colors:
 env:
   TERM: xterm-256color
 
-tabspaces: 4
+tabspaces: 2
 
 scrolling:
     history: 5000
 
+cursor:
+    style: Beam
+
 key_bindings:
-  # Vi Mode
   - { key: K,  mods: Command, mode: ~Vi|~Search, chars: "\x0c"         }
   - { key: R,  mods: Command, mode: ~Search,    action: ToggleViMode   }
   - { key: B,  mods: Command, mode: Vi|~Search, action: ScrollPageUp   }
