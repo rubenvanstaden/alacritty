@@ -1,74 +1,68 @@
+# https://github.com/alacritty/alacritty/blob/master/alacritty.yml
+
+window:
+    padding:
+        x: 20
+        y: 15
+    dimensions:
+        columns: 120
+        lines: 45
+
+font:
+  normal:
+    family: Source Code Pro
+    style: Light
+  bold:
+    family: Source Code Pro
+    style: Bold
+  italic:
+    family: Source Code Pro
+    style: Italic
+  offset:
+    x: 0
+    y: 1
+  size: 16
+
+colors:
+    primary:
+        background: '#2E3440'
+        foreground: '#abb2bf'
+
+    normal:
+        black:   '#3B4252'
+        red:     '#BF616A'
+        green:   '#A3BE8C'
+        yellow:  '#EBCB8B'
+        blue:    '#81A1C1'
+        magenta: '#B48EAD'
+        cyan:    '#88C0D0'
+        white:   '#abb2bf'
+
+    bright:
+        black:   '#4C566A'
+        red:     '#BF616A'
+        green:   '#A3BE8C'
+        yellow:  '#EBCB8B'
+        blue:    '#81A1C1'
+        magenta: '#B48EAD'
+        cyan:    '#8FBCBB'
+        white:   '#ECEFF4'
+
 env:
   TERM: xterm-256color
 
 tabspaces: 2
 
 scrolling:
-  history: 5000
+    history: 5000
 
-font:
-  normal:
-    family: MonoLisa
-    style: Regular
-  bold:
-    family: MonoLisa
-    style: Bold
-  italic:
-    family: MonoLisa
-    style: Italic
-  bold_italic:
-    family: MonoLisa
-    style: Bold Italic
-  offset:
-    x: 0
-    y: 1
-  size: 9
-
-draw_bold_text_with_bright_colors: true
-
-colors:
-  primary:
-    background: '#282c34'
-    foreground: '#abb2bf'
-  selection:
-    text:       CellForeground
-    background: '#393f4a'
-  normal:
-    black:   '#8A8A8A'
-    green:   '#7d7c7b'
-    blue:    '#61afef'
-    cyan:    '#56b6c2'
-    white:   '#7d7c7b'
-    # yellow:  '#e0af68'
-    # magenta: '#c678dd'
-    # red:     '#e86671'
-  bright:
-    green:   '#7d7c7b'
-    blue:   '#abb2bf'
-    cyan:    '#56b6c2'
-    white:   '#abb2bf'
-    # black:   '#8A8A8A'
-    # red:     '#e86671'
-    # green:   '#98c379'
-    # yellow:  '#e0af68'
-    # magenta: '#c678dd'
-  indexed_colors:
-    - { index: 16, color: '#d19a66' }
-    - { index: 17, color: '#f65866' }
-
-window:
-  opacity: 1.0
-  padding:
-    x: 10
-    y: 10
-  dimensions:
-    columns: 133
-    lines: 40
+cursor:
+    style: Beam
 
 key_bindings:
-  - { key: V,         mods: Control|Shift, action: Paste                       }
-  - { key: C,         mods: Control|Shift, action: Copy                        }
-  - { key: L,         mods: Control,       action: ClearLogNotice              }
-  - { key: L,         mods: Control,       chars: "\x0c"                       }
-  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
-  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+  - { key: K,  mods: Command, mode: ~Vi|~Search, chars: "\x0c"         }
+  - { key: R,  mods: Command, mode: ~Search,    action: ToggleViMode   }
+  - { key: B,  mods: Command, mode: Vi|~Search, action: ScrollPageUp   }
+  - { key: F,  mods: Command, mode: Vi|~Search, action: ScrollPageDown }
+  - { key: Y,  mods: Command, mode: Vi|~Search, action: ScrollLineUp   }
+  - { key: E,  mods: Command, mode: Vi|~Search, action: ScrollLineDown }
