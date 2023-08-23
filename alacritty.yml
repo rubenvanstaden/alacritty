@@ -1,29 +1,28 @@
 import:
-  - ~/.config/alacritty/themes/iceberg.yml
-  # - ~/.config/alacritty/themes/nord.yml
+    - ~/.config/alacritty/themes/kanagawa.yml
 
 window:
     padding:
-        x: 20
+        x: 15
         y: 15
     dimensions:
-        columns: 120
-        lines: 45
+        columns: 135
+        lines: 50
 
 font:
     normal:
-        family: Source Code Pro
+        family: Inconsolata
         style: ExtraLight
     bold:
-        family: Source Code Pro
-        style: SemiBold
+        family: Inconsolata
+        style: Bold
     italic:
-        family: Source Code Pro
-        style: Italic
+        family: Inconsolata
+        style: Light
     offset:
         x: 0
-        y: 1
-    size: 16
+        y: 0
+    size: 18
 
 env:
   TERM: xterm-256color
