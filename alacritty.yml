@@ -2,30 +2,28 @@ import:
     - ~/.config/alacritty/themes/kanagawa.yml
 
 window:
+    opacity: 0.9
     padding:
         x: 15
         y: 15
     dimensions:
-        columns: 135
-        lines: 50
+        columns: 110
+        lines: 48
 
 font:
     normal:
-        family: Inconsolata
+        family: Source Code Pro
         style: ExtraLight
     bold:
-        family: Inconsolata
+        family: Source Code Pro
         style: Bold
     italic:
-        family: Inconsolata
-        style: Light
+        family: Source Code Pro
+        style: Light Italic
     offset:
         x: 0
         y: 0
-    size: 18
-
-env:
-  TERM: xterm-256color
+    size: 16
 
 tabspaces: 2
 

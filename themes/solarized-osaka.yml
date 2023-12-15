@@ -1,0 +1,22 @@
+colors:
+
+  # Default colors
+  primary:
+    background: '#00141A' # base03
+    foreground: '#9FABAD' # base0
+
+  # Cursor colors
+  cursor:
+    text:   '#002d38' # base03
+    cursor: '#98a8a8' # base0
+
+  # Normal colors
+  normal:
+    black:   '#00141A' # base03
+    red:     '#F6524F' # red
+    green:   '#BAFB00' # green
+    yellow:  '#B58900' # yellow
+    blue:    '#49AEF5' # blue
+    magenta: '#F255A1' # magenta
+    cyan:    '#2AA198' # cyan
+    white:   '#9FABAD' # base2
